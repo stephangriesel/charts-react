@@ -5,7 +5,7 @@ const options = {
         height:450,
         width:'100%',
         type: 'bar',
-        background: '#000000',
+        background: '#0000FF',
         foreColor:'#FFFFFF'
     },
     series: [{
@@ -14,6 +14,27 @@ const options = {
     }],
     xaxis: {
         categories: ['Amsterdam', 'Rotterdam', 'The Hague', 'Utrecht', 'Eindhoven', 'Tilburg']
+    },
+    plotOptions: {
+        bar: {
+            horizontal: false
+        }
+    },
+    fill: {
+        colors: ['#FFA500']
+    },
+    dataLabels: {
+        enabled:false
+    },
+    title: {
+        text: 'Largest Cities By Population (Netherlands)',
+        align: 'center',
+        padding: 20,
+        offsetY: 20,
+        style: {
+            color:'#FFFFFF',
+            fontSize:'1.5em',
+        }
     }
 };
 
