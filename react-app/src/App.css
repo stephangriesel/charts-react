@@ -1,0 +1,12 @@
+:root {
+  --columns: 1fr;
+}
+
+@media (min-width:768px){
+  --columns:1fr 1fr 1fr
+}
+
+.grid-container {
+  display:grid;
+  grid-template-columns: var(--columns);
+}
